@@ -22,3 +22,8 @@
 // Example:
 // Input: 4  → Output: trueInput: 7  → Output: false
 // Hint: Use the modulus (%) operator.
+
+const isEven = (n) => n % 2 === 0;
+
+console.log(isEven(4)); // true
+console.log(isEven(7)); // false
