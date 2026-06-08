@@ -34,3 +34,9 @@
 // Example:
 // Input: 3, 7, 5  → Output: 7
 // Hint: Use Math.max() or if-else conditions.
+
+const largest = (a, b, c) => {
+    return Math.max(a, b, c);
+}
+
+console.log(largest(3, 7, 5));
