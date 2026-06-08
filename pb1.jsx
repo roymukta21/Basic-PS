@@ -4,3 +4,9 @@
 // Input: a = 5, b = 10Output: a = 10, b = 5
 // Hint: Try using destructuring or arithmetic operators.
 
+let a = 5;
+let b = 10;
+
+[a,b] = [b,a];
+
+console.log(a,b);
