@@ -49,3 +49,9 @@
 
 const toFahrenheit = (celsius) => (celsius * 9/5) + 32;
 console.log(toFahrenheit(0));
+
+// Problem 5: Check Positive, Negative or Zero  [Easy]
+// Description: Write a function checkSign(n) that returns 'positive', 'negative', or 'zero' based on the value of n.
+// Example:
+// Input: -5  → Output: 'negative'Input: 0   → Output: 'zero'
+// Hint: Use if-else if-else statements.
