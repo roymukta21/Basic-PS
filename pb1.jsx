@@ -60,3 +60,5 @@ const checkSign = (n) => {
   else if (n < 0) return "negative";
   else return "zero";
 };
+
+console.log(checkSign("5"));
