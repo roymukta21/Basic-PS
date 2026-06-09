@@ -73,3 +73,7 @@
 // Input: 'banana', 'a'  → Output: 3
 // Hint: Use split(char).length - 1 or a loop.
 
+const countChar = (str, char) =>{
+   return str.split(char).length - 1;
+}
+console.log(countChar("banana"))
