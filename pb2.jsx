@@ -72,3 +72,4 @@
 // Example:
 // Input: 'banana', 'a'  → Output: 3
 // Hint: Use split(char).length - 1 or a loop.
+
