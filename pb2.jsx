@@ -21,11 +21,18 @@
 // Hint: Use a loop or match() with a regular expression.
 
  const countVowels = (str) => {
-    
- }
+  let count = 0;
+
+  for (let char of str.toLowerCase()) {
+    if ("aeiou".includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
+};
  
- 
- 
+ console.log(countVowels("javascript"));
  
  
 // Problem 8: Check Palindrome  [Easy]
