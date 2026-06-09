@@ -54,7 +54,14 @@
 // Input: 'hello world'  → Output: 'Hello World'
 // Hint: Use split(' '), map(), and join(' ').
 
- const capitalizeFirst 
+ const titleCase = (str) =>{
+    return str.split(" ")
+    .map((word) =>
+    word[0].toUpperCase() + word.slice(1))
+    .join(" ");
+ }
+ console.log(titleCase("hello world"))
+
  
  
  
