@@ -8,7 +8,8 @@
 
  
  const reverseString = (srt) => srt.split("").reverse() .join("");
- 
+
+ console.log (reverseString("Output"))
  
  
  
