@@ -20,7 +20,9 @@
 // Input: 'hello'   → Output: 2Input: 'javascript' → Output: 3
 // Hint: Use a loop or match() with a regular expression.
 
- 
+ const countVowels = (str) => {
+    
+ }
  
  
  
