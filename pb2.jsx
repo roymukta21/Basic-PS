@@ -42,10 +42,11 @@
 // Hint: Compare the string to its reverse.
 
  
+ const isPalindrome = (str) =>
+  str === str.split("").reverse().join("");
  
  
- 
- 
+ console.log(isPalindrome("racecar"));
  
 // Problem 9: Capitalize First Letter of Each Word  [Easy]
 // Description: Write a function titleCase(str) that capitalizes the first letter of every word in a string.
