@@ -62,7 +62,11 @@ console.log(removeDuplicates([1, 2, 2, 3, 3, 4]));
 // Hint: Use flat() or reduce() with concat().
 
  
- 
+ const flattenArray = (arr) => {
+  return arr.flat();
+};
+
+console.log(flattenArray([1, [2, 3], [4, 5]]));
  
  
  
