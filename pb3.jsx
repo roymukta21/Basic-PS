@@ -76,3 +76,9 @@ console.log(flattenArray([1, [2, 3], [4, 5]]));
 // Example:
 // Input: [1,2,3,4,5], 2  → Output: [[1,2],[3,4],[5]]
 // Hint: Use a while loop with slice().
+
+const flattenArray = (arr) => {
+  return arr.reduce((result, item) => result.concat(item), []);
+};
+
+console.log(flattenArray([1, [2, 3], [4, 5]]));
