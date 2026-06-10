@@ -47,7 +47,11 @@ console.log(findMax([3, 1, 7, 2, 9]));
 
  
  
- 
+ const removeDuplicates = (arr) => {
+  return [...new Set(arr)];
+};
+
+console.log(removeDuplicates([1, 2, 2, 3, 3, 4]));
  
  
  
