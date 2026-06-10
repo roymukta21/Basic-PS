@@ -7,7 +7,9 @@
 // Hint: Use reduce() or a for loop.
 
  
- 
+const sumArray = (arr) => {
+    return arr.reduce((sum, num))
+}
  
  
  
