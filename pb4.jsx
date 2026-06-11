@@ -78,3 +78,29 @@ console.log(invertObject({ a: 1, b: 2 }));
 // Example:
 // Input: [{name:'Ali'},{name:'Sara'},{name:'Ali'}]Output: ['Ali']
 // Hint: Use a frequency map (object) to count occurrences....
+
+function findDuplicateNames(array) {
+    const nameCounts = {};
+    const duplicates = [];
+
+     array.forEach(item => {
+        const name = item.name;
+        nameCounts[name] = (nameCounts[name] || 0) + 1;
+    });
+    for (const name in nameCounts) {
+        if (nameCounts[name] > 1) {
+            duplicates.push(name);
+        }
+    }
+
+    return duplicates;
+}
+const customers = [
+    { id: 1, name: "Alex" },
+    { id: 2, name: "John" },
+    { id: 3, name: "Alex" },
+    { id: 4, name: "Mary" },
+    { id: 5, name: "John" }
+];
+
+console.log(findDuplicateNames(customers)); 
