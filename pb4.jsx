@@ -62,7 +62,13 @@ console.log(mergeObjects({ a: 1 }, { b: 2 }));
 // Hint: Use Object.entries() and reduce().
 
  
- 
+ const invertObject = (obj) =>
+  Object.entries(obj).reduce((acc, [key, value]) => {
+    acc[value] = key;
+    return acc;
+  }, {});
+
+console.log(invertObject({ a: 1, b: 2 }));
  
  
  
