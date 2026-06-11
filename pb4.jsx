@@ -52,7 +52,7 @@ console.log(mergeObjects({ a: 1 }, { b: 2 }));
  }
 
 
- console.log(fizzBuzz(15));
+ console.log(fizzBuzz(30));
  
  
 // Problem 19: Invert an Object  [Easy]
