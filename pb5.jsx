@@ -48,7 +48,26 @@ console.log(fibonacci(6));
 // Hint: Use a variable inside the outer function that inner functions can access.
 
  
- 
+ const makeCounter = () => {
+  let count = 0;
+
+  return {
+    increment: () => {
+      count++;
+    },
+
+    getCount: () => {
+      return count;
+    },
+  };
+};
+
+const counter = makeCounter();
+
+counter.increment();
+counter.increment();
+
+console.log(counter.getCount()); 
  
  
  
