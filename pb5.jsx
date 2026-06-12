@@ -99,3 +99,26 @@ console.log(add(2)(3));
 // Example:
 // const memoAdd = memoize(n => n + 10);memoAdd(5); // 15 (computed)memoAdd(5); // 15 (from cache)
 // Hint: Use an object as a cache inside the outer function.
+
+
+
+
+const memoize = (fn) => {
+  let cache = {};
+
+  return (num) => {
+    if (cache[num]) {
+      return cache[num];
+    }
+
+    let result = fn(num);
+    cache[num] = result;
+
+    return result;
+  };
+};
+
+const square = memoize((n) => n * n);
+
+console.log(square(5)); 
+console.log(square(5)); 
