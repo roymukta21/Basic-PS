@@ -60,7 +60,17 @@ console.log(fibonacci(6));
 // Hint: Return a function from inside a function.
 
  
- 
+ const curry = (fn) => {
+  return (a) => {
+    return (b) => {
+      return fn(a, b);
+    };
+  };
+};
+
+const add = curry((a, b) => a + b);
+
+console.log(add(2)(3)); 
  
  
  
