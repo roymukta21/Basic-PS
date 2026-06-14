@@ -39,6 +39,8 @@
 // delay(1000).then(() => { console.log('1 sec'); return delay(2000); }).then(() => console.log('3 sec total'));
 // Hint: Use new Promise with setTimeout inside.
 
+
+
  
  
  
