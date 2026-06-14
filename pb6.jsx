@@ -82,5 +82,5 @@ function delay(ms){
 // const user = {profile: null};const city = user?.profile?.address?.city ?? 'Unknown';// Output: 'Unknown'
 // Hint: Chain ?. for each level; use ?? for the fallback.
 
-// const user = {profile: null};const city = user?.profile?.address?.city ?? 'Unknown';
-// console.log(city);
+const user = {profile: null};const city = user?.profile?.address?.city ?? 'Unknown';
+console.log(city);
