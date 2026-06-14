@@ -57,7 +57,9 @@ function delay(ms){
 // await getUserData(1);// returns {id:1, name:'Test User'}
 // Hint: Use async/await with a Promise that wraps setTimeout.
 
- 
+ const getUserData = async(id) => {
+    
+ }
  
  
  
