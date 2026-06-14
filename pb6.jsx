@@ -58,10 +58,21 @@ function delay(ms){
 // Hint: Use async/await with a Promise that wraps setTimeout.
 
  const getUserData = async(id) => {
-
- }
+    const user = await new 
+    Promise((resolve) =>{
+        setTimeout(() => {
+            resolve({
+                id: id,
+                name: 'Test User'
+            });
+        }, 500);
+    });
+  return user;
+ };
  
- 
+ getUserData(1).then((data) => {
+    console.log(data)
+ });
  
  
  
