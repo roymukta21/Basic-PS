@@ -26,9 +26,11 @@
 // Hint: Use rest parameters and spread inside reduce or flat.
 
  
+ function mergeArrays(...arrays) {
+    return arrays.flat();
+ }
  
- 
- 
+ console.log(mergeArrays([1,2], [3,4], [5]))
  
  
 // Problem 28: Promise Chain  [Medium]
