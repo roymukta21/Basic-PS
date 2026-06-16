@@ -34,7 +34,21 @@
     }
  }
  
- 
+ let count = 0;
+
+async function unstableFetch() {
+  count++;
+
+  if (count < 3) {
+    throw new Error("Failed!");
+  }
+
+  return "Success!";
+}
+
+retry(unstableFetch, 3)
+  .then(result => console.log(result))
+  .catch(error => console.log(error.message));
  
  
  
