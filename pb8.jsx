@@ -22,7 +22,17 @@
 // await retry(unstableFetch, 3);// Tries up to 3 times before failing
 // Hint: Use a loop with try/catch; only throw after all retries are exhausted...
 
- 
+ async function retry(fn, times) {
+    for (let i = 0; i<times; i++){
+        try{
+            return await fn();
+        } caches (error) {
+            if  (i === times -1){
+                throw error;
+            }
+        }
+    }
+ }
  
  
  
