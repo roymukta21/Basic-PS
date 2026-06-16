@@ -1,8 +1,8 @@
-Problem 36: Safe JSON Parse  [Easy]
-Description: Write a function safeJsonParse(str) that tries to parse a JSON string and returns the parsed value, or null if parsing fails — without throwing an error.
-Example:
-safeJsonParse('{"a":1}');  // {a: 1}safeJsonParse('bad json'); // null
-Hint: Use try/catch inside the function.
+// Problem 36: Safe JSON Parse  [Easy]
+// Description: Write a function safeJsonParse(str) that tries to parse a JSON string and returns the parsed value, or null if parsing fails — without throwing an error.
+// Example:
+// safeJsonParse('{"a":1}');  // {a: 1}safeJsonParse('bad json'); // null
+// Hint: Use try/catch inside the function.
 
  
  
@@ -10,11 +10,11 @@ Hint: Use try/catch inside the function.
  
  
  
-Problem 37: Retry a Promise  [Medium]
-Description: Write a function retry(fn, times) that calls an async function fn up to times times, retrying if it throws an error. Resolves on first success, rejects after all attempts fail.
-Example:
-await retry(unstableFetch, 3);// Tries up to 3 times before failing
-Hint: Use a loop with try/catch; only throw after all retries are exhausted.
+// Problem 37: Retry a Promise  [Medium]
+// Description: Write a function retry(fn, times) that calls an async function fn up to times times, retrying if it throws an error. Resolves on first success, rejects after all attempts fail.
+// Example:
+// await retry(unstableFetch, 3);// Tries up to 3 times before failing
+// Hint: Use a loop with try/catch; only throw after all retries are exhausted.
 
  
  
@@ -22,11 +22,11 @@ Hint: Use a loop with try/catch; only throw after all retries are exhausted.
  
  
  
-Problem 38: Implement Promise.all from Scratch  [Hard]
-Description: Write a function myPromiseAll(promises) that behaves like Promise.all — resolves with an array of results when all resolve, rejects immediately if any rejects.
-Example:
-myPromiseAll([p1, p2, p3]).then(results => console.log(results));
-Hint: Track resolved count and results array; reject on first failure.
+// Problem 38: Implement Promise.all from Scratch  [Hard]
+// Description: Write a function myPromiseAll(promises) that behaves like Promise.all — resolves with an array of results when all resolve, rejects immediately if any rejects.
+// Example:
+// myPromiseAll([p1, p2, p3]).then(results => console.log(results));
+// Hint: Track resolved count and results array; reject on first failure.
 
  
  
@@ -34,11 +34,11 @@ Hint: Track resolved count and results array; reject on first failure.
  
  
  
-Problem 39: Flatten Object (Deep)  [Medium]
-Description: Write a function flattenObject(obj) that takes a deeply nested object and returns a flat object with dot-notation keys.
-Example:
-Input: {a: {b: {c: 1}}}Output: {'a.b.c': 1}
-Hint: Use recursion; build the key by joining parent keys with dots.
+// Problem 39: Flatten Object (Deep)  [Medium]
+// Description: Write a function flattenObject(obj) that takes a deeply nested object and returns a flat object with dot-notation keys.
+// Example:
+// Input: {a: {b: {c: 1}}}Output: {'a.b.c': 1}
+// Hint: Use recursion; build the key by joining parent keys with dots.
 
  
  
@@ -46,8 +46,8 @@ Hint: Use recursion; build the key by joining parent keys with dots.
  
  
  
-Problem 40: Group Array by Property  [Medium]
-Description: Write a function groupBy(arr, key) that groups an array of objects by a given property key.
-Example:
-groupBy([{type:'fruit',name:'apple'},{type:'veg',name:'carrot'},{type:'fruit',name:'mango'}], 'type')// {fruit: [...], veg: [...]}
-Hint: Use reduce() and build an object where each key maps to an array.
+// Problem 40: Group Array by Property  [Medium]
+// Description: Write a function groupBy(arr, key) that groups an array of objects by a given property key.
+// Example:
+// groupBy([{type:'fruit',name:'apple'},{type:'veg',name:'carrot'},{type:'fruit',name:'mango'}], 'type')// {fruit: [...], veg: [...]}
+// Hint: Use reduce() and build an object where each key maps to an array.
