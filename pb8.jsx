@@ -26,7 +26,7 @@
     for (let i = 0; i<times; i++){
         try{
             return await fn();
-        } caches (error) {
+        } catch (error) {
             if  (i === times -1){
                 throw error;
             }
