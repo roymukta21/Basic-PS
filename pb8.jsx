@@ -91,7 +91,6 @@ retry(unstableFetch, 3)
   return result;
 }
 
-// Example
 const obj = {
   a: {
     b: {
@@ -101,7 +100,7 @@ const obj = {
 };
 
 console.log(flattenObject(obj));
-// { 'a.b.c': 1 }
+
  
  
  
