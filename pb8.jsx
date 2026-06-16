@@ -71,7 +71,37 @@ retry(unstableFetch, 3)
 // Hint: Use recursion; build the key by joining parent keys with dots.
 
  
- 
+ function flattenObject(obj, parentKey = "", result = {}) {
+  for (let key in obj) {
+    const newKey = parentKey
+      ? `${parentKey}.${key}`
+      : key;
+
+    if (
+      typeof obj[key] === "object" &&
+      obj[key] !== null &&
+      !Array.isArray(obj[key])
+    ) {
+      flattenObject(obj[key], newKey, result);
+    } else {
+      result[newKey] = obj[key];
+    }
+  }
+
+  return result;
+}
+
+// Example
+const obj = {
+  a: {
+    b: {
+      c: 1
+    }
+  }
+};
+
+console.log(flattenObject(obj));
+// { 'a.b.c': 1 }
  
  
  
