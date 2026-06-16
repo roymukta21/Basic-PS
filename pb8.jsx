@@ -4,10 +4,16 @@
 // safeJsonParse('{"a":1}');  // {a: 1}safeJsonParse('bad json'); // null
 // Hint: Use try/catch inside the function.
 
+ function safeJsonParse(str) {
+    try{
+        return JSON.parse(str);
+    } catch (error) {
+        return null;
+    }
+ }
  
- 
- 
- 
+ console.log (safeJsonParse('{"a":1}'))
+ console.log (safeJsonParse('bad json'))
  
  
 // Problem 37: Retry a Promise  [Medium]
