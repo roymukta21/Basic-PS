@@ -16,7 +16,7 @@
 // Description: Write a function isAnagram(str1, str2) that returns true if the two strings are anagrams of each other.
 // Example:
 // Input: 'listen', 'silent'  → Output: trueInput: 'hello', 'world'   → Output: false
-// Hint: Sort both strings and compare, or use a character frequency map.
+// Hint: Sort both strings and compare, or use a character frequency map...
 
  
  
