@@ -6,11 +6,12 @@
 // Input: 'the cat sat on the mat'Output: {the: 2, cat: 1, sat: 1, on: 1, mat: 1}
 // Hint: Split by spaces, then reduce into a frequency object.
 
- 
- 
-["the", "cat", "sat", "on", "the", "mat"]
- 
- { the: 1 }
+ function wordCount(sentence){
+    let word = sentence.split(" ");
+    let count= {};
+    for (let word of words)
+ }
+
  
 // Problem 47: Longest Word in a Sentence  [Easy]
 // Description: Write a function longestWord(sentence) that returns the longest word in a sentence. If there's a tie, return the first one.
