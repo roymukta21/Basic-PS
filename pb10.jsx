@@ -6,22 +6,22 @@
 // Input: 'the cat sat on the mat'Output: {the: 2, cat: 1, sat: 1, on: 1, mat: 1}
 // Hint: Split by spaces, then reduce into a frequency object.
 
-function wordCount(sentence) {
-  let words = sentence.split(" ");
+// function wordCount(sentence) {
+//   let words = sentence.split(" ");
 
-  let count = {};
-  for (let word of words) {
-    if (count[word]) {
-      count[word]++;
-    } else {
-      count[word] = 1;
-    }
-  }
+//   let count = {};
+//   for (let word of words) {
+//     if (count[word]) {
+//       count[word]++;
+//     } else {
+//       count[word] = 1;
+//     }
+//   }
 
-  return count;
-}
+//   return count;
+// }
 
-console.log(wordCount("the cat sat on the mat"));
+// console.log(wordCount("the cat sat on the mat"));
 
 // Problem 47: Longest Word in a Sentence  [Easy]
 // Description: Write a function longestWord(sentence) that returns the longest word in a sentence. If there's a tie, return the first one.
@@ -32,10 +32,10 @@ console.log(wordCount("the cat sat on the mat"));
 
 function longestWord(sentence){
     return sentence.split(" ").reduce((longest, word) => {
-        return word.lenght > longest.lenght ? word : longest;
+        return word.length > longest.length ? word : longest;
     }, "") ;
 }
-console
+console.log(longestWord("The quick brown fox"))
 
 
 // Problem 48: Rotate an Array  [Medium]
