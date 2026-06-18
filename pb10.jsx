@@ -8,9 +8,9 @@
 
  
  
+["the", "cat", "sat", "on", "the", "mat"]
  
- 
- 
+ { the: 1 }
  
 // Problem 47: Longest Word in a Sentence  [Easy]
 // Description: Write a function longestWord(sentence) that returns the longest word in a sentence. If there's a tie, return the first one.
